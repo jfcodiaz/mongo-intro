@@ -1,0 +1,16 @@
+use("store")
+
+//remove one
+db.inventory.updateMany({}, {
+    $pull: {
+        tags: "book"
+    }
+});
+//remove many
+db.inventory.updateMany({}, {
+    $pull: {
+        tags: {
+            $in: ['appliance', 'school']
+        }
+    }
+})

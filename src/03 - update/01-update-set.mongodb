@@ -1,0 +1,14 @@
+use("store")
+
+
+db.products.updateOne(
+    {_id: 2},
+    {
+        $set: {
+            name: 'Changed Name',
+            price: 3000,
+            tags: ['A', 'B', 'C']
+        }
+    }
+)
+db.products.find();
