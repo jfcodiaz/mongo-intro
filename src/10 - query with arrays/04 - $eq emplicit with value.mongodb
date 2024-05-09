@@ -1,0 +1,6 @@
+use('store')
+
+//Find all documente taht has book in tags array
+db.inventory.find({
+    tags: "book"
+})

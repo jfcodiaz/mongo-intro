@@ -1,0 +1,6 @@
+use('store')
+
+//Find all docment that has exactly ['school', 'book'] array as tags array
+db.inventory.find({
+    tags: ['school', 'book']
+})

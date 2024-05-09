@@ -1,0 +1,8 @@
+use('store')
+
+//Find all document that has 'scool' and 'book' in tags array
+db.inventory.find({
+    tags: {
+        $all: ['school', 'book']
+    }
+})

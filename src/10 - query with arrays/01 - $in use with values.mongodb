@@ -1,0 +1,8 @@
+use('store')
+//Find all documenet with qty has a value as 20 or 25
+
+db.inventory.find({
+    qty: {
+        $in: [ 20, 25]
+    }
+})

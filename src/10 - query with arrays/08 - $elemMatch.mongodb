@@ -1,0 +1,10 @@
+use('store')
+
+db.survey.find({
+    results: {
+        $elemMatch: {
+            product: 'xyz',
+            score: { $gte: 7 }
+        }
+    }
+})

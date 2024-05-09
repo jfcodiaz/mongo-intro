@@ -1,0 +1,7 @@
+use('store')
+//Find all document that it has book or electronics in tags array
+db.inventory.find({
+    tags: {
+        $in: ['book', 'electronics'] 
+    }
+})

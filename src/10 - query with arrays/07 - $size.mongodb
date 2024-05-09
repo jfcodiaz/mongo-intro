@@ -1,0 +1,8 @@
+use('store')
+
+//Find all document that their tags array has 2 elements
+db.inventory.find({
+    tags: {
+        $size: 2
+    }
+})
