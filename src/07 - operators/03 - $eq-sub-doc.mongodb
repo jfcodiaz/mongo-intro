@@ -1,0 +1,3 @@
+use('store')
+
+db.inventory.find({"item.code": "123"})

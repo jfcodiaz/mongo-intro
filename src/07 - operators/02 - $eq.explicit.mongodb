@@ -1,0 +1,7 @@
+use('store')
+
+db.inventory.find({
+    qty: {
+        $eq: 20
+    }
+})

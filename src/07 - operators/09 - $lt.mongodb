@@ -1,0 +1,5 @@
+use('store')
+//lt <
+db.inventory.find({
+    qty: {$lt : 20}
+})
