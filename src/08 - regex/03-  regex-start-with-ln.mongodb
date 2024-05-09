@@ -1,0 +1,9 @@
+use('store')
+
+db.inventory.find(
+    {
+        'item.description': {
+            $regex: /^s/im
+        }
+    }
+)
