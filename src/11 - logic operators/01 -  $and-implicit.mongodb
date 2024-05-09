@@ -1,0 +1,6 @@
+use('sample_training')
+
+db.inspections.find({
+    sector: "Tax Preparers - 891",
+    result: "Unable to Locate",
+}).count()

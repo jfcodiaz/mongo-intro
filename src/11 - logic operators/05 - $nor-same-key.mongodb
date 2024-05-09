@@ -1,0 +1,8 @@
+use('sample_training')
+
+db.inspections.find({
+    $nor: [
+        {sector: "Tax Preparers - 891"},
+        {result: "Unable to Locate"},
+    ]
+}).count()
