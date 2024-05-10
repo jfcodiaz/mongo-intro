@@ -1,0 +1,8 @@
+use('sample_training')
+
+db.companies.find({
+    "relationships.0.person.last_name": "Zuckerberg"
+}, {
+    name:1,
+    relationships:1
+})

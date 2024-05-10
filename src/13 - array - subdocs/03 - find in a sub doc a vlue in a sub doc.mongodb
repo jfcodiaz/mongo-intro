@@ -1,0 +1,12 @@
+use('sample_training')
+
+db.companies.find({
+    relationships: {
+        $elemMatch: {
+            "person.first_name": "Mark"
+        }
+    }
+}, {
+    name:1,
+    'relationships.person.first_name':1
+}).count()
